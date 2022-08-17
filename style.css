@@ -1,0 +1,449 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+  /* background-image: url("./images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% ; */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(217, 28%, 15%);
+  background-image: url("./images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  /* background-color: hsl(217, 28%, 15%); */
+  /* height: 100vh; */
+}
+
+header div.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 2rem;
+}
+
+header div.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  opacity: 0.6;
+}
+
+header div.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+header div.hero img {
+  width: 50%;
+  margin: auto;
+}
+
+header div.hero h1 {
+  width: 40%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+header div.hero p {
+  width: 40%;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  opacity: 0.7;
+}
+
+header button {
+  width: 20%;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: larger;
+  margin: auto;
+  margin-top: 2rem;
+  border: none;
+  background-color: hsl(176, 68%, 64%);
+  color: white;
+  cursor: pointer;
+}
+
+section#first div.grid {
+  width: 80%;
+  margin: 10rem auto;
+  /* margin-top: 10rem; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+section#first div.grid div i {
+  width: 20%;
+  margin: auto;
+}
+
+section#first div.grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+section#first div.grid div p {
+  width: 65%;
+  text-align: center;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+  opacity: 0.5;
+  font-weight: lighter;
+}
+
+section#second {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+section#second img#hero {
+  width: 50%;
+}
+
+section#second div.secondSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section#second div.secondSection h3 {
+  width: 50%;
+  font-size: 3rem;
+  font-weight: lighter;
+  /* line-height: 2.5rem; */
+  /* letter-spacing: 0.1rem; */
+}
+
+section#second div.secondSection p {
+  opacity: 0.5;
+  width: 70%;
+}
+
+section#second div.secondSection a {
+  text-decoration: none;
+}
+section#second div.secondSection a div {
+  display: flex;
+  align-items: center;
+  color: hsl(176, 68%, 64%);
+
+  /* justify-content: center; */
+}
+
+section#second div.secondSection a div i {
+  margin-top: 0.4rem;
+}
+
+section#second div.secondSection a div p {
+  width: fit-content;
+}
+
+section#third {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  gap: 2rem;
+}
+
+#quote::before {
+  content: url("./images/bg-quotes.png");
+  position: relative;
+  top: -35px;
+  left: 5px;
+  z-index: -1;
+}
+
+/* section#third div.daddy:nth-of-type(1) {
+  background-image: url("./images/bg-quotes.png");
+  background-repeat: no-repeat;
+  z-index: 2;
+} */
+
+section#third div.daddy {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 0.4rem;
+  margin-top: 10rem;
+}
+
+section#third div.daddy p {
+  opacity: 0.6;
+  width: 75%;
+  line-height: 1.3rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+section#third div.daddy div.info {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+section#third div.daddy div.info p {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: normal;
+  width: fit-content;
+}
+
+section#third div.daddy div.info i img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+div.card {
+  background-color: hsl(219, 30%, 18%);
+  width: 70%;
+  margin: 4rem auto;
+  padding: 2rem 0;
+  border-radius: 8px;
+  margin-bottom: -8rem;
+  position: relative;
+  z-index: 4;
+}
+
+div.card h5 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+div.card p {
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  opacity: 0.7;
+}
+
+div.card .email {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+div.card .email input {
+  width: 60%;
+  /* padding-left: 2rem; */
+  border-radius: 30px;
+  border: none;
+}
+
+div.card .email input::placeholder {
+  padding: 1rem;
+}
+
+div.card .email button {
+  width: 30%;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: medium;
+  color: white;
+  margin: auto;
+  background-color: hsl(176, 68%, 64%);
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  padding: 12rem 0 6rem;
+  display: flex;
+}
+
+footer div.footerFlex {
+  display: flex;
+  padding-left: 2rem;
+  /* justify-content: space-evenly; */
+}
+#first {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.location p {
+  width: 40%;
+}
+
+#firstInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+
+#firstInfo div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer div.footerFlex div ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+@media (max-width: 1300px) {
+  div.card .email button {
+    font-size: 0.8rem;
+  }
+  section#second div.secondSection h3 {
+    font-size: 2rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    background-image: url("./images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+  header div.nav {
+    margin: 1rem;
+  }
+
+  header div.nav i img {
+    width: 70%;
+  }
+  header div.nav ul {
+    gap: 1rem;
+  }
+  header div.nav ul li {
+    font-size: 1rem;
+  }
+  header div.hero {
+    gap: 2rem;
+  }
+  header div.hero h1 {
+    font-size: 1.5rem;
+  }
+
+  header div.hero p {
+    font-size: 1rem;
+  }
+  header button {
+    font-size: small;
+    padding: 1rem;
+  }
+  section#first div.grid {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+
+  section#first div.grid div i {
+    width: 10%;
+  }
+
+  section#second {
+    flex-direction: column;
+  }
+
+  section#second img#hero {
+    width: 90%;
+  }
+
+  section#second div.secondSection {
+    justify-content: center;
+    align-items: center;
+  }
+
+  section#third {
+    flex-direction: column;
+  }
+  section#third div.daddy {
+    margin-top: 1rem;
+  }
+
+  div.card .email {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  div.card .email input {
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    margin-top: 2rem;
+  }
+
+  div.card .email button {
+    width: 80%;
+    margin: auto;
+  }
+
+  footer div.footerFlex {
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    background-image: url("./images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+  header div.nav i img {
+    width: 60%;
+  }
+  header div.nav ul li {
+    font-size: small;
+  }
+
+  header div.hero h1 {
+    width: 80%;
+  }
+
+  header div.hero p {
+    width: 75%;
+  }
+  header button {
+    width: fit-content;
+    padding: 1rem 2rem;
+  }
+  .location p {
+    width: 70%;
+  }
+
+  section#first div.grid div i {
+    width: 20%;
+  }
+}
