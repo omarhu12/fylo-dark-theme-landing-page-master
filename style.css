@@ -163,24 +163,22 @@ section#third {
   gap: 2rem;
 }
 
+
 #quote::before {
   content: url("./images/bg-quotes.png");
-  position: relative;
+  position: absolute;
   top: -35px;
   left: 5px;
   z-index: -1;
 }
 
-/* section#third div.daddy:nth-of-type(1) {
-  background-image: url("./images/bg-quotes.png");
-  background-repeat: no-repeat;
-  z-index: 2;
-} */
+
 
 section#third div.daddy {
   background-color: hsl(219, 30%, 18%);
   border-radius: 0.4rem;
   margin-top: 10rem;
+  position: relative;
 }
 
 section#third div.daddy p {
@@ -279,10 +277,7 @@ footer div.footerFlex {
   padding-left: 2rem;
   /* justify-content: space-evenly; */
 }
-#first {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .location {
   display: flex;
